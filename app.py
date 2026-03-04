@@ -58,7 +58,7 @@ def add_album():
 
     repository.create(new_album)
 
-    return "Album added"
+    return f"Added album: {album_name}"
 
 # These lines start the server if you run this file directly
 # They also start the server configured to use the test database
