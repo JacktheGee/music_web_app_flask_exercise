@@ -9,6 +9,7 @@ from app import app
 def db_connection():
     conn = DatabaseConnection(test_mode=True)
     conn.connect()
+    conn.seed("seeds/flask_exercise_seed.sql")
     return conn
 
 # We'll also create a fixture for the client we'll use to make test requests.

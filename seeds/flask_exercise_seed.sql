@@ -1,3 +1,4 @@
+TRUNCATE TABLE albums RESTART IDENTITY;
 -- First need to drop all tables if they exist
 -- Drop foreign tables first to prevent orphan data being created
 DROP TABLE IF EXISTS albums;
